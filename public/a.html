@@ -83,7 +83,7 @@
 function buscarDados() {
     const id = document.getElementById('id').value;
 
-    fetch(`http://localhost:3000/Usuarios/${id}`, {
+    fetch(`/Usuarios/${id}`, {
         method: 'GET',
     })
     .then(response => response.json())
@@ -98,7 +98,7 @@ function buscarDados() {
 
         function buscarCPF() {
   const cpf = document.getElementById('cpf').value;
-  fetch(`http://localhost:3000/Usuarios?cpf=${cpf}`, {
+  fetch(`/Usuarios?cpf=${cpf}`, {
       method: 'GET',
     })
     .then(response => response.json())
@@ -160,7 +160,7 @@ function buscarDados() {
             const experiencia = document.getElementById('experiencia').value
             const informacoes = document.getElementById('informacoes').value
 
-            fetch(`http://localhost:3000/Usuarios/${id}`,{
+            fetch(`/Usuarios/${id}`,{
                 method: 'DELETE',
                 headers: {
                     'Content-Type' : 'application/json'
