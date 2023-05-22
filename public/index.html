@@ -44,7 +44,7 @@
   const cpf = document.querySelector("input[type=cpf]").value;
   const senha = document.querySelector("input[type=password]").value;
 
-  fetch(`http://localhost:3000/Usuarios?cpf=${cpf}&senha=${senha}`)
+  fetch(`/Usuarios?cpf=${cpf}&senha=${senha}`)
   .then(response => response.json())
   .then(data => {
 
