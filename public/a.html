@@ -135,7 +135,7 @@ function buscarDados() {
             const experiencia = document.getElementById('experiencia').value
             const informacoes = document.getElementById('informacoes').value
 
-            fetch(`http://localhost:3000/Usuarios/${id}`,{
+            fetch(`/Usuarios/${id}`,{
                 method: 'PUT',
                 headers: {
                     'Content-Type' : 'application/json'
