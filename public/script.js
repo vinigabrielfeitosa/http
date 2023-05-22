@@ -11,7 +11,7 @@ function enviarDados() {
     const informacoes = document.getElementById('informacoes').value;
   
     if (cpf && senha && nome && email && idade && telefone && animal && condicoes && experiencia) {
-      fetch('http://localhost:3000/Usuarios',{
+      fetch('/Usuarios',{
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
