@@ -4,8 +4,8 @@ Este projeto consiste em um sistema de login básico usando Node.js, com funcion
 
 ## Tecnologias Utilizadas
 
-Node.js
-Express.js`
+Node.js,
+Express.js
 
 ## Créditos
 
